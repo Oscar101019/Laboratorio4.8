@@ -20,6 +20,7 @@ public class Intro extends AppCompatActivity {
     private ImageView imageView;
     private AnimationDrawable cat;
     MediaPlayer loop,mp;
+    private android.app.AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,7 @@ public class Intro extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Intro.this);
                 builder.setMessage("Integrantes: \n\nOscar Alberto Cordero Villa \nGuillermo Guadalupe Reyes Guerrero\n\n\nGato version: 2.0  ")
                         .setTitle("Acerca de...")
-                        .setCancelable(false)
+                        .setCancelable(true)
                         .setNeutralButton("Aceptar",
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
@@ -78,6 +79,7 @@ public class Intro extends AppCompatActivity {
                                         mp.start();
                                     }
                                 });
+
                 AlertDialog alert = builder.create();
                 alert.show();
 
