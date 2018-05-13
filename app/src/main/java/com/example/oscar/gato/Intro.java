@@ -1,5 +1,4 @@
 package com.example.oscar.gato;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -8,11 +7,9 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class Intro extends AppCompatActivity {
 
@@ -20,7 +17,6 @@ public class Intro extends AppCompatActivity {
     private ImageView imageView;
     private AnimationDrawable cat;
     MediaPlayer loop,mp;
-    private android.app.AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
